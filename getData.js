@@ -28,7 +28,7 @@
 //ex8.2
 //การรับ export ต้องใช้ import 
 
-import RabbitTwo from './rabbit.js'
+import RabbitTwo from './rabbit.js';
 
-const rabbit2 = new RabbitTwo('b','lop')
-console.log(rabbit2)
+const rabbit2 = new RabbitTwo('b','lop');
+console.log(rabbit2);

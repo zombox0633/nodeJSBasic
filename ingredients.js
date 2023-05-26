@@ -17,9 +17,9 @@
 // exports.specialMenu = specialMenu
 
 //แบบสอง
-exports.menu1 = 'salmon fish2'
+exports.menu1 = 'salmon fish2';
 exports.specialMenu = () => {
-  console.log('tuna fish2')
+  console.log('tuna fish2');
 }
 
 //จะมีไฟล์ getData.js ข้อมูล

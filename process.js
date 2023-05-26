@@ -125,8 +125,8 @@ if (c === "plus") {
 import dotenv from 'dotenv';
 dotenv.config(); //จะใช้ได้ก็ต่อเมื่อลง npm i dotenv นะจะทำให้ใช้ค่าใน env ได้
 
-const {MYSQL_USERNAME,MYSQL_PASSWORD,MYSQL_HOSTNAME,MYSQL_PORT,MYSQL_DB} = process.env
-const dbSting = `mysql://${MYSQL_USERNAME}:${MYSQL_PASSWORD}@${MYSQL_HOSTNAME}:${MYSQL_PORT}/${MYSQL_DB}`
-console.log(dbSting)
+const {MYSQL_USERNAME,MYSQL_PASSWORD,MYSQL_HOSTNAME,MYSQL_POST,MYSQL_DB} = process.env;
+const dbSting = `mysql://${MYSQL_USERNAME}:${MYSQL_PASSWORD}@${MYSQL_HOSTNAME}:${MYSQL_POST}/${MYSQL_DB}`;
+console.log(dbSting);
 
 
