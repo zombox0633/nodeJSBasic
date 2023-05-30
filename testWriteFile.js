@@ -20,8 +20,10 @@ const server = http.createServer((request, response) => {
 
   const logContent = `${new Date} : ${method} : ${url}\n` //ใส่ \n เพื่อให้ตัวต่อไปขึ้นบันทรรดใหม่
 
-  //เมือทำการ run อีกรอบจะทำการบันทึกทับข้อมูลเก่า
+  // fs.writeFileSync จะทำการเขียนข้อมูลที่กำหนดและสร้างไฟล์ขึ้นมา
+  
   // fs.writeFileSync("request.log", logContent);
+  //เมือทำการ run อีกรอบจะทำการบันทึกทับข้อมูลเก่า
 
   //แบบด้านล่างจะทำการบันทึกโดยไม่บันทึกทับข้อมูลเก่า
   fs.writeFileSync("request.log", logContent,{flag: "a+"});
@@ -34,3 +36,4 @@ const server = http.createServer((request, response) => {
 server.listen(APP_PORT, () => {
   console.log("Server is start : " + APP_PORT);
 });
+
