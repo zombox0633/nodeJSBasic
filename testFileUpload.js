@@ -14,7 +14,7 @@ const server = http.createServer((req, res) => {
     let form = new formidable.IncomingForm();
     form.parse(req, (error, fields, files) => {
       if (files && files.fileupload) {
-        let oldpath = files.fileupload.path; //ตัว fileupload สามารถหา path ได้แต่ใช้งานไม่ได้
+        let oldpath = files.fileupload.filepath; //ตัว fileupload สามารถหา path ได้แต่ใช้งานไม่ได้
         let newpath =
           "C:/Users/Zombox/Desktop/project/Newproject/nodejs/nodeJsBasic/img/" +
           files.fileupload.name;
